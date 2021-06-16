@@ -15,6 +15,7 @@
 theme_argon='https://github.com/sypopo/luci-theme-argon-mc.git'             # 主题地址
 openClash_url='https://github.com/vernesong/OpenClash.git'                  # OpenClash包地址
 filter_url='https://github.com/destan19/OpenAppFilter.git'                  # AppFilter 地址
+lienol_url='https://github.com/Lienol/openwrt-package.git'                  # Lienol 包地址
 
 echo '添加主题argon'
 git clone $theme_argon package/lean/luci-theme-argon-mc
@@ -26,6 +27,9 @@ git clone $openClash_url package/lean/luci-app-openclash
 #  OpenClash
 echo 'CONFIG_PACKAGE_luci-app-openclash=y' >>.config
 echo 'CONFIG_PACKAGE_luci-i18n-openclash-zh-cn=y' >>.config
+
+echo '添加Lienol包'
+git clone $lienol_url package/Lienol
 
 echo '添加filebrowser'
 echo 'CONFIG_PACKAGE_luci-app-filebrowser=y' >>.config
