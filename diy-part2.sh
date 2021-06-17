@@ -28,12 +28,12 @@ git clone $openClash_url package/lean/luci-app-openclash
 echo 'CONFIG_PACKAGE_luci-app-openclash=y' >>.config
 echo 'CONFIG_PACKAGE_luci-i18n-openclash-zh-cn=y' >>.config
 
-echo '添加Lienol包'
-git clone $lienol_url package/Lienol
+# echo '添加Lienol包'
+# git clone $lienol_url package/Lienol
 
-echo '添加filebrowser'
-echo 'CONFIG_PACKAGE_luci-app-filebrowser=y' >>.config
-echo 'CONFIG_PACKAGE_luci-i18n-filebrowser-zh-cn=y' >>.config
+# echo '添加filebrowser'
+# echo 'CONFIG_PACKAGE_luci-app-filebrowser=y' >>.config
+# echo 'CONFIG_PACKAGE_luci-i18n-filebrowser-zh-cn=y' >>.config
 
 echo '添加OpenAppFilter过滤器'
 git clone $filter_url package/OpenAppFilter
